@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" style="border: 2px solid blue">
+        <p class="fs-1 text-center title">CONVERSOR DE TEMPERATURA</p>
+        <p class="fs-5 text-center">Aquí puedes convertir grados Celsius a Farenheit o Kelvin</p>
+    </div>
+
+    <div class="container col-4 my-5 mx-auto justify-content-center">
+        <div class="row mt-0 mb-3">
+            <label for="tempCelsius" class="form-label text-center">Ingresa la temperatura en grados Celsius</label>
+            <input type="number" class="form-control" id="tempCelsius" placeholder="20" required>
+            <div class="invalid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <button type="button" class="btn btn-primary btn-convertir col-3" escala="farenheit">°C a °F</button>
+            <button type="button" class="btn btn-primary btn-convertir col-3" escala="kelvin">°C a °K</button>
+        </div>
+    </div>
+
+    <!-- <form class="container row g-5 needs-validation my-5 mx-auto justify-content-center" style="border: 2px solid red;" novalidate>
+        <div class="col-4 mt-0">
+            <label for="tempCelsius" class="form-label">Ingresa la temperatura en grados Celsius</label>
+            <input type="number" class="form-control" id="tempCelsius" placeholder="20" required>
+            <div class="invalid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-3 mt-0">
+        <p>Selecciona la escala a convertir</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Farenheit</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Kelvin</label>
+        </div>
+        </div>
+
+    </form> -->
+
+    <div class="container justify-content-center" style="border: 2px solid yellow;">
+        <div class="container col-4" style="border: 2px solid green">
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
