@@ -12,50 +12,29 @@
 </head>
 
 <body>
-    <div class="container" style="border: 2px solid blue">
-        <p class="fs-1 text-center title">CONVERSOR DE TEMPERATURA</p>
-        <p class="fs-5 text-center">Aquí puedes convertir grados Celsius a Farenheit o Kelvin</p>
+    <div class="container mt-5 mx-auto px-3">
+        <p class="fs-2 text-center title">CONVERSOR DE TEMPERATURA</p>
+        <p class="fs-6 fst-italic text-center">Aquí puedes convertir grados Celsius a Farenheit o Kelvin</p>
     </div>
 
-    <div class="container col-4 my-5 mx-auto justify-content-center">
+    <div class="container col-lg-4 col-sm-6 col-10 my-5 mx-auto justify-content-center">
         <div class="row mt-0 mb-3">
             <label for="tempCelsius" class="form-label text-center">Ingresa la temperatura en grados Celsius</label>
-            <input type="number" class="form-control" id="tempCelsius" placeholder="20" required>
+            <input type="number" step="0.01" class="form-control" id="tempCelsius" placeholder="ej. 20" required>
             <div class="invalid-feedback">
-                Looks good!
+                <p class="m-0">Solo puedes ingresar máximo dos cifras decimales.</p> 
+                <p class="m-0">Para números negativos ingresa el - antes del número, ej: -30.</p>
             </div>
         </div>
-        <div class="row justify-content-around">
-            <button type="button" class="btn btn-primary btn-convertir col-3" escala="farenheit">°C a °F</button>
-            <button type="button" class="btn btn-primary btn-convertir col-3" escala="kelvin">°C a °K</button>
+        <div class="row justify-content-around g-3">
+            <button type="button" class="btn btn-primary btn-convertir col-lg-3 col-sm-5 fw-bold" escala="farenheit">°C a °F</button>
+            <button type="button" class="btn btn-info btn-convertir col-lg-3 col-sm-5 fw-bold" escala="kelvin">°C a °K</button>
         </div>
     </div>
 
-    <!-- <form class="container row g-5 needs-validation my-5 mx-auto justify-content-center" style="border: 2px solid red;" novalidate>
-        <div class="col-4 mt-0">
-            <label for="tempCelsius" class="form-label">Ingresa la temperatura en grados Celsius</label>
-            <input type="number" class="form-control" id="tempCelsius" placeholder="20" required>
-            <div class="invalid-feedback">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-3 mt-0">
-        <p>Selecciona la escala a convertir</p>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Farenheit</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Kelvin</label>
-        </div>
-        </div>
-
-    </form> -->
-
-    <div class="container justify-content-center" style="border: 2px solid yellow;">
-        <div class="container col-4" style="border: 2px solid green">
-            <p id="resultado"></p>
+    <div class="row text-center">
+        <div class="container text-center col-lg-4 col-sm-6 col-10 p-2">
+            <input id="resultado" class="form-control form-control-lg border-3 text-center" type="text" placeholder="Resultado" readonly>
         </div>
     </div>
 

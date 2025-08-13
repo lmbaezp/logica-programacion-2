@@ -1,8 +1,8 @@
 .title::after {
     content: "";
     display: block;
-    width: 75%;
+    width: 95%;
     height: 3px;
-    background-color: red;
+    background-color: #031633;
     margin: 10px auto;
 }
