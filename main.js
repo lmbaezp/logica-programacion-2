@@ -5,7 +5,6 @@ const containerResultado = document.getElementById('resultado');
 btnsConvertir.forEach(btn => {
     btn.addEventListener('click', () => {
         containerResultado.value = '';
-        console.log(isNaN(tempCelsius.value))
 
         if (!/^-?\d+(\.\d{1,2})?$/.test(tempCelsius.value.trim())) {
             tempCelsius.classList.add('is-invalid')
